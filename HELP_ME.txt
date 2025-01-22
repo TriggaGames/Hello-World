@@ -1,0 +1,34 @@
+1. GIT is a distributed version control system that helps you track changes in your files, collaborate with others, and manage different versions of your code or documents. 
+
+2. Setting up git (these details will be seen when you are active in the repository/branch):
+	1. git config --global user.name "Name" # Use this to tell git your name
+	2. git config --global user.email "Email" # Use this to tell git your email
+
+3. Tracking projects:
+	1. cd /path/to/your/project
+	2. git init
+
+4. Basic GIT commands:
+	1. git status # This asks git what is the current status of your work, as in what has changed, what was pulled, etc.
+	2. git add . # The '.' can be replaced with any file name if you want to add a specific file to the staging process
+	3. git commit -m "Your commit message" #This makes it to where your changes are saved to git but not seen by other users
+	4. git push origin branch-name # Replace 'branch-name' with the branch you are in and it will push those saved changes so that others can see
+	5. git pull # This grabs every change others have made to any files you are involved in and allows you to access those changes
+
+NOTE: ALWAYS PULL BEFORE CONTINUING A PROJECT, IF NOT THEN THE FILE YOU WILL BE WORKING ON WILL BE A PREVIOUS VERSION OF THE FILE AND A MERGE WILL HAVE TO HAPPEN ON THE OWNERS SIDE
+
+5. Cloning: git clone https://github.com/website
+
+6. Merge conflicts: 
+	1. Open the conflicting files in an editor like VS Code.
+	2. Decide whether to keep local changes, accept incoming changes, or manually merge.
+
+7. Viewing commit history: git log OR git log --oneline
+
+8. Miscellaneous (however tf you spell it):
+	1. git checkout -b new-branch-name # checkout -b is a command that changes from the current working branch to a new branch that you have named "new-branch-name"
+	2. git checkout branch-name # This command changes back to 'branch-name'
+	3. git checkout main
+	   git merge feature-login # By doing these two commands, you merge both the "main" branch and the "feature-login" branch
+
+NOTE: The merge feature is a workaround to pushing and commiting and pulling and etc. Work carefully when merging two branches. Merging is a good way to easily view your changes.

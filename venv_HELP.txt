@@ -1,0 +1,11 @@
+Creating virtual environments - helpful for keeping packages specific to your project
+	1. python -m venv your-venv-name
+	2. your-venv-name\Scripts\activate # to activate your virtual environment, run this
+	3. NOTE: Always check that the interpreter is your environment
+		Go to: ctrl+shift+P -> Python: Select interpreter\Enter interpreter path
+		Navigate from here and look for your virtual environment. 
+		By selecting your environment, the interpreter will be your venv.
+
+NOTE: If you pip install anything in a specific project that has a venv, that package will not be installed onto any other projects. You must create a new venv for each project you do.
+
+NOTE: Most of my virtual environments will be named after me (JC_venv)
